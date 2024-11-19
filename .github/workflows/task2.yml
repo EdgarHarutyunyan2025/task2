@@ -15,4 +15,6 @@ jobs:
       - name: unzip file
         run: unzip UsermanagmentWeb.zip
       - name: list dir
-        run: ls -la
+        run: |
+          cd UsermanagmentWeb
+          ls -la
