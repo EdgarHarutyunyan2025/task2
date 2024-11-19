@@ -14,7 +14,8 @@ jobs:
         uses: actions/checkout@v4
       - name: unzip file
         run: unzip UsermanagmentWeb.zip
-      - name: list dir
+      - name: npm install
         run: |
           cd UsermanagmentWeb
           ls -la
+          npm install
