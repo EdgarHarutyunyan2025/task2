@@ -15,7 +15,7 @@ jobs:
       - name: unzip file
         run: unzip UsermanagmentWeb.zip
       - name: ip adres
-        run: ip a
+        run: ifconfig
       - name: npm install
         working-directory: ./UsermanagmentWeb
         run: |
