@@ -18,10 +18,8 @@ jobs:
         working-directory: ./UsermanagmentWeb
         run: |
           npm install
-          npm run dev    
-      - name: install ngrok
-        run: |
           brew install ngrok/ngrok/ngrok
           ngrok config add-authtoken 2oF7adWYtidDVIRKYkfoAISpOwi_7cemDNx7xCmdMZsRdg9Qb
+          npm run dev    
           ngrok http http://localhost:8080
     
