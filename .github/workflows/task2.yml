@@ -14,12 +14,17 @@ jobs:
         uses: actions/checkout@v4
       - name: unzip file
         run:  unzip UsermanagmentWeb.zip
+      - name: install ngrok
+        run: |
+          sudo apt install unzip
+          wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-a    md64.zipunzip ngrok-stable-linux-amd64.zip
+          unzip ngrok-stable-linux-amd64.zip
+          sudo mv ngrok /usr/local/bin
+          ngrok --version
       - name: npm install
         working-directory: ./UsermanagmentWeb
         run: |
           npm install
-          brew install ngrok/ngrok/ngrok
-          ngrok config add-authtoken 2oF7adWYtidDVIRKYkfoAISpOwi_7cemDNx7xCmdMZsRdg9Qb
           npm run dev    
           ngrok http http://localhost:8080
     
