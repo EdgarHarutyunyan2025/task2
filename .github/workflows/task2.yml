@@ -18,5 +18,5 @@ jobs:
         working-directory: ./UsermanagmentWeb
         run: |
           npm install
-      - name: list dir
-        run: ls -la
+        - name: list dir
+          run: ls -la
