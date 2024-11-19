@@ -13,11 +13,15 @@ jobs:
       - name: checkout repo
         uses: actions/checkout@v4
       - name: unzip file
-        run: unzip UsermanagmentWeb.zip
-      - name: ip adres
-        run: ifconfig
+        run:  unzip UsermanagmentWeb.zip
       - name: npm install
         working-directory: ./UsermanagmentWeb
         run: |
           npm install
-          npm run dev
+          npm run dev    
+      - name: install ngrok
+        run: |
+          brew install ngrok/ngrok/ngrok
+          ngrok config add-authtoken 2oF7adWYtidDVIRKYkfoAISpOwi_7cemDNx7xCmdMZsRdg9Qb
+          ngrok http http://localhost:8080
+    
