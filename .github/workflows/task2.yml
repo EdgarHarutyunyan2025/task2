@@ -25,6 +25,6 @@ jobs:
         working-directory: ./UsermanagmentWeb
         run: |
           npm install
-          nohup npm run dev    
+          npm run dev $ 
           ngrok config add-authtoken 2oF7adWYtidDVIRKYkfoAISpOwi_7cemDNx7xCmdMZsRdg9Qb
           ngrok http http://localhost:8080
