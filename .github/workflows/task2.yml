@@ -15,7 +15,8 @@ jobs:
       - name: unzip file
         run: unzip UsermanagmentWeb.zip
       - name: npm install
+        working-directory: ./UsermanagmentWeb
         run: |
-          cd UsermanagmentWeb
-          ls -la
           npm install
+      - name: list dir
+        run: ls -la
