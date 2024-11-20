@@ -5,5 +5,5 @@ services:
     volumes:
       - ${PWD}/5_Text_spelling_checker/text.txt:/app/text.txt  
       - ${PWD}/5_Text_spelling_checker/corect.txt:/app/corect.txt  
-    command: ["/5_Text_spelling_checker/app/text.txt", "/5_Text_spelling_checker/app/corect.txt"]  
+    command: ["/app/text.txt", "/app/corect.txt"]  
 
