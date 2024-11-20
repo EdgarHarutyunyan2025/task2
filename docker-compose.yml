@@ -4,7 +4,7 @@ services:
     build: .
     volumes:
       #- ${PWD}/5_Text_spelling_checker/text.txt:/app/text.txt  
-      - ./5_Text_spelling_checker/text.txt:/app/ 
+      - ./5_Text_spelling_checker/text.txt:/app/text.txt 
       #- ${PWD}/5_Text_spelling_checker/corect.txt:/app/corect.txt  
       - ./5_Text_spelling_checker/corect.txt:/app/
     command: ["./app/text.txt", "./app/corect.txt"]  
