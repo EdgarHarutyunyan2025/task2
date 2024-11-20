@@ -10,11 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
       - name: list dir 
         run: ls -la
 
-      - name: Checkout repository
-        uses: actions/checkout@v4
 
       - name: Run Docker Compose Action
         uses: ./
