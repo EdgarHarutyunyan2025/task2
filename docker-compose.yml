@@ -8,5 +8,5 @@ services:
       #- ${PWD}/5_Text_spelling_checker/corect.txt:/app/corect.txt  
 #      - ./5_Text_spelling_checker/corect.txt:/app/
 #    command: ["./app/text.txt", "./app/corect.txt"]  
-    command: ["./5_Text_spelling_checker/text.txt", "./5_Text_spelling_checker/corect.txt"]  
+    command: ["./text.txt", "./corect.txt"]  
 
