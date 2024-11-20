@@ -10,4 +10,6 @@ runs:
   image: 'docker:latest'  
   args:
     - '/bin/sh'
-    - docker-compose -f ${{ inputs.docker-compose-file }} up --build 
+    - '-c'
+    - |
+        docker-compose -f ${{ inputs.docker-compose-file }} up --build
