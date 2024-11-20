@@ -12,9 +12,11 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: list dir 
-        run: ls -la
 
+      - name: list dir 
+        run: |
+          cd 5_Text_spelling_checker
+          ls -la
 
       - name: Run Docker Compose Action
         uses: ./
