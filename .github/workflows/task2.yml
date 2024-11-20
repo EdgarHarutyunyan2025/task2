@@ -1,31 +1,17 @@
-name: task2
+name: Run Docker Compose Action
 
 on:
   push:
     branches:
-      - main
-
+      - main 
 
 jobs:
-  test_task2:
+  docker-compose:
     runs-on: ubuntu-latest
+
     steps:
-      - name: checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v4
-      - name: unzip file
-        run:  unzip UsermanagmentWeb.zip
-      - name: install ngrok
-        run: |
-          sudo apt install unzip
-          wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-amd64.zip
-          unzip ngrok-stable-linux-amd64.zip
-          sudo mv ngrok /usr/local/bin
-          ngrok --version
-      - name: npm install
-        working-directory: ./UsermanagmentWeb
-        run: |
-          npm install
-          nohup npm run dev $ 
-          sleep 5
-          ngrok config add-authtoken 2oF7adWYtidDVIRKYkfoAISpOwi_7cemDNx7xCmdMZsRdg9Qb
-          ngrok http http://localhost:5173
+
+      - name: Run Docker Compose Action
+        uses: ./

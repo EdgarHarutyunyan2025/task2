@@ -1,0 +1,9 @@
+version: '3'
+services:
+  test_spelling_checker:
+    build: .
+    volumes:
+      - ${PWD}/5_Text_spelling_checker/text.txt:/app/text.txt  
+      - ${PWD}/5_Text_spelling_checker/corect.txt:/app/corect.txt  
+    command: ["/app/text.txt", "/app/corect.txt"]  
+
