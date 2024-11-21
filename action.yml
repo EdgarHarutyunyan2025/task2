@@ -2,14 +2,15 @@ name: 'Docker Compose Action'
 description: 'GitHub Action to run Docker Compose'
 inputs:
   docker-compose-file:
-    description: 'my Docker Compose file'
-    required: true
-    default: 'my_docker-compose.yml'
+#    description: 'my Docker Compose file'
+#    required: true
+#    default: 'my_docker-compose.yml'
+    
 runs:
   using: 'docker'
-  image: 'docker:latest'  
-  #image: 'Dockerfile'  
+  #image: 'docker:latest'  
+  image: 'Dockerfile'  
   args:
-    - '/bin/sh'
-    - '-c'
-    - docker-compose -f ${{ inputs.docker-compose-file }} up --build
+#    - '/bin/sh'
+#    - '-c'
+#    - docker-compose -f ${{ inputs.docker-compose-file }} up --build
