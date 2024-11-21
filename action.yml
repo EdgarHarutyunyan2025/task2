@@ -7,8 +7,8 @@ inputs:
     default: 'docker-compose.yml'
 runs:
   using: 'docker'
-  #image: 'docker:latest'  
-  image: 'Dockerfile'  
+  image: 'docker:latest'  
+  #image: 'Dockerfile'  
   args:
     - '/bin/sh'
     - '-c'
