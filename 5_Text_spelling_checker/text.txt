@@ -1,5 +1,4 @@
 language. They shrten words by using symbols to represent
  the word or sybols whose name sounds like a syllable of 
 the word sch as in 2day or b4. This is commonly used in other languages as 
-Wwell. Crytal gives some examples in several languages such as Italian sei, 
-"sx", is ued for sei, "you are". Example: dv6 = dove sei 
+Wwell Crytal gives some examples in several languages such as Italian sei
