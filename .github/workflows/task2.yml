@@ -20,5 +20,7 @@ jobs:
 
       - name: Run Docker Compose Action
         uses: ./
-#        with:
+        with:
 #          docker-compose-file: 'docker-compose.yml'
+          - ${{  imputs.imput-file }}
+          - ${{  imputs.output-file }}
