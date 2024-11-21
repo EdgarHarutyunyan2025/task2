@@ -2,11 +2,11 @@ name: 'Docker Compose Action'
 description: 'GitHub Action to run Docker Compose'
 inputs:
   input-file:
-    description: 'my imput file'
+    description: 'my imput file for test'
     required: true
     default: 'input_text.txt'
   output-file:
-    description: 'my output file'
+    description: 'my output corect file'
     required: true
     default: 'output_corect.txt'
 
@@ -15,5 +15,5 @@ runs:
   #image: 'docker:latest'  
   image: 'Dockerfile'  
   args:
-    - ${{  inputs.input-file }}
-    - ${{  inputs.output-file }}
+    - ${{ inputs.input-file  }}
+    - ${{ inputs.output-file }}
