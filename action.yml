@@ -4,8 +4,7 @@ inputs:
   docker-compose-file:
     description: 'my Docker Compose file'
     required: true
-    #default: 'docker-compose.yml'
-    default: 'my_docker-compose.yml'
+    default: 'docker-compose.yml'
 runs:
   using: 'docker'
   image: 'docker:latest'  
