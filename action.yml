@@ -7,8 +7,9 @@ inputs:
     default: 'docker-compose.yml'
 runs:
   using: 'docker'
-  image: 'docker:latest'  
+  #image: 'docker:latest'  
+  image: 'Dockerfile'  
   args:
-#    - '/bin/sh'
+    - '/bin/sh'
     - '-c'
     - docker-compose -f ${{ inputs.docker-compose-file }} up --build
