@@ -22,5 +22,5 @@ runs:
 #    - '/bin/sh'
 #    - '-c'
 #    - docker-compose -f ${{ inputs.docker-compose-file }} up --build
-    - ${{  inputs.input-file }}
+    - ${{  inputs.imput-file }}
     - ${{  inputs.output-file }}
