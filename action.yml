@@ -5,7 +5,7 @@ inputs:
 #    description: 'my Docker Compose file'
 #    required: true
 #    default: 'my_docker-compose.yml'
-  imput-file:
+  input-file:
     description: 'my imput file'
     required: true
     default: 'text.txt'
@@ -22,5 +22,5 @@ runs:
 #    - '/bin/sh'
 #    - '-c'
 #    - docker-compose -f ${{ inputs.docker-compose-file }} up --build
-    - ${{  imputs.imput-file }}
-    - ${{  imputs.output-file }}
+    - ${{  inputs.input-file }}
+    - ${{  inputs.output-file }}
