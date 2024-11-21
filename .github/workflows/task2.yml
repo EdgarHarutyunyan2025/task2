@@ -20,6 +20,5 @@ jobs:
       - name: Run Docker Action
         uses: ./
         with:
-#          docker-compose-file: 'docker-compose.yml'
           input-file: '/app/text.txt'
           output-file: '/app/corect.txt'
