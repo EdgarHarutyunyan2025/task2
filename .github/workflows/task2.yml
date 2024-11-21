@@ -20,5 +20,5 @@ jobs:
 
       - name: Run Docker Compose Action
         uses: ./
-        with:
-          docker-compose-file: 'docker-compose.yml'
+#        with:
+#          docker-compose-file: 'docker-compose.yml'
